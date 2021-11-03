@@ -1,7 +1,9 @@
 #!/bin/bash
-# Ethan Koen - epkknd
 # status.sh
-# This script uses the systemctl command to check the status of a daemon. It also allows the user to start or stop a daemon by entering "start" or "stop" as the second argument. 
+# Written by Ethan Koen for IT3530 at the University of Missouri
+#
+# This script uses the systemctl command to check the status of a daemon. 
+# It also allows the user to start or stop a daemon by entering "start" or "stop" as the second argument. 
 # Second argument is not required
 # Input: status.sh <daemon name> <"start" or "stop">
 systemctl status $1 > /dev/null 2>&1 
